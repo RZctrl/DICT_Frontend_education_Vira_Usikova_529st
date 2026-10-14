@@ -1,22 +1,25 @@
 body {
     font-family: Arial, sans-serif;
     background: linear-gradient(#1d1d1d, #0e0e0f);
-    color: #FFF;
-    max-width: 1280px;
+    color: #fff;
+    max-width: 80em;
     margin: 50px auto;
+    padding: 0 16px;
     text-align: center;
 }
 
-div {
+header {
+    padding: 20px 0;
+}
+
+section {
     border-radius: 12px;
-    padding: 25px 20px;
-    margin-top: 40px;
-    max-width: 1280px;
+    margin: 40px 0;
 }
 
 img {
     display: block;
-    margin: 15px auto;
+    margin: 0 auto;
     max-width: 100%;
     height: auto;
 }
@@ -46,15 +49,96 @@ audio {
     max-width: 100%;
 }
 
-
 .trust img {
     width: 300px;
     height: auto;
     object-fit: contain;
 }
 
+.specialty-card {
+    padding: 20px;
+    border: 1px solid #8E8E8E;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+
+.numbers {
+    background-color: #1e1e1e;
+    color: #fff;
+    padding: 25px 40px;
+    margin: 40px 0;
+    border-left: 10px solid #454545;
+    border-right: 10px solid #454545;
+    box-sizing: border-box;
+}
+
+.numbers-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.number-card {
+    flex: 1 1 150px;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.number-card:not(:last-child) {
+    border-right: 1px solid #FF3A3A;
+}
+
+
+.news-container {
+    background-color: #1e1e1e;
+    color: #fff;
+    padding: 25px 40px;
+    margin: 40px 0;
+    border-left: 10px solid #454545;
+    border-right: 10px solid #454545;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 20px;
+}
+
+.news-card {
+    flex: 1 1 150px;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.news-card:not(:last-child) {
+    border-right: 1px solid #FF3A3A;
+}
+
+
+
+.reviews {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin: 20px 0;
+}
+
+.review-card {
+    flex: 1 1 200px;
+    padding: 20px;
+    border: 1px solid #8E8E8E;
+    border-radius: 20px;
+}
+
+.review-author {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
 footer {
-    margin: 30px auto 20px;
+    padding: 40px 0;
     color: #eaf4fb;
     border-radius: 12px;
 }
