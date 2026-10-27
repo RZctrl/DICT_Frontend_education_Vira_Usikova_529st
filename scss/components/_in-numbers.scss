@@ -1,0 +1,25 @@
+#numbers {
+  background-color: $section-bg;
+  color: $white;
+  padding: 25px 40px;
+  margin: 40px 0;
+  border-left: 10px solid $border-grey;
+  border-right: 10px solid $border-grey;
+  box-sizing: border-box;
+
+  .numbers-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .number-card {
+    flex: 1 1 150px;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+
+    &:not(:last-child) {
+      border-right: 1px solid $red;
+    }
+  }
+}
