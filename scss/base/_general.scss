@@ -1,0 +1,118 @@
+body {
+  font-family: $font-stack;
+  background: linear-gradient($dark-bg, $darker-bg);
+  color: $main-color;
+  max-width: 80em;
+  margin: 0 auto;
+  padding: 0 $base-padding;
+  text-align: center;
+}
+
+section {
+  margin: 40px 0;
+  border-radius: 12px;
+}
+
+//сюди також перенесено стилі з минулого файлу стилів, але основні представлені стилі методичних матеріалів збережено зверху
+img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+
+video {
+  width: 70%;
+  height: auto;
+  display: block;
+  margin: 15px auto;
+  border-radius: 5px;
+  background: $black;
+}
+
+audio {
+  display: block;
+  width: 100%;
+  max-width: 500px;
+  margin: 20px auto;
+}
+
+.trust {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  max-width: 100%;
+
+  img {
+    width: 300px;
+    height: auto;
+    object-fit: contain;
+  }
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+
+  p {
+    margin-bottom: 18px;
+  }
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+  color: $footer-text;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 6px;
+  background: rgba(0, 0, 0, 0.25);
+  color: $white;
+  font-size: 16px;
+  box-sizing: border-box;
+  transition: border-color 0.2s, background 0.2s;
+
+  &:focus {
+    outline: none;
+    border-color: $grey;
+    background: rgba(0, 0, 0, 0.4);
+  }
+}
+
+select option {
+  background: $button-bg;
+  color: $white;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+button[type="submit"] {
+  display: block;
+  margin: 20px auto 0;
+  padding: 12px 32px;
+  background: $button-bg;
+  color: $white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+
+  &:hover {
+    background: $grey;
+  }
+}

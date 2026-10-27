@@ -1,0 +1,268 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  background: linear-gradient(#1d1d1d, #0e0e0f);
+  color: #2c3e50;
+  max-width: 80em;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+section {
+  margin: 40px 0;
+  border-radius: 12px;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+
+video {
+  width: 70%;
+  height: auto;
+  display: block;
+  margin: 15px auto;
+  border-radius: 5px;
+  background: #000;
+}
+
+audio {
+  display: block;
+  width: 100%;
+  max-width: 500px;
+  margin: 20px auto;
+}
+
+.trust {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  max-width: 100%;
+}
+.trust img {
+  width: 300px;
+  height: auto;
+  object-fit: contain;
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+form p {
+  margin-bottom: 18px;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+  color: #eaf4fb;
+}
+
+input[type=text],
+input[type=tel],
+input[type=email],
+input[type=number],
+select,
+textarea {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 6px;
+  background: rgba(0, 0, 0, 0.25);
+  color: #fff;
+  font-size: 16px;
+  box-sizing: border-box;
+  transition: border-color 0.2s, background 0.2s;
+}
+input[type=text]:focus,
+input[type=tel]:focus,
+input[type=email]:focus,
+input[type=number]:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: #8e8e8e;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+select option {
+  background: #575151;
+  color: #fff;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+button[type=submit] {
+  display: block;
+  margin: 20px auto 0;
+  padding: 12px 32px;
+  background: #575151;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+button[type=submit]:hover {
+  background: #8e8e8e;
+}
+
+header {
+  padding: 20px 0;
+}
+
+nav {
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 12px;
+  padding: 12px 20px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+}
+nav li {
+  margin: 0;
+}
+nav a {
+  display: inline-block;
+  padding: 10px 22px;
+  color: #eaf4fb;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  border-radius: 30px;
+  border: 1px solid transparent;
+}
+nav a:hover {
+  background: #575151;
+  color: #fff;
+  border-color: #8e8e8e;
+}
+
+footer {
+  padding: 40px 0;
+  color: #eaf4fb;
+  border-radius: 12px;
+}
+footer img {
+  max-height: 60px;
+  width: auto;
+  margin: 0 auto 15px;
+}
+
+.all-reviews .reviews {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin: 20px 0;
+}
+.all-reviews .review-card {
+  padding: 20px;
+  border-radius: 20px;
+  border: 1px solid #8e8e8e;
+  flex: 1 1 200px;
+}
+.all-reviews .review-author {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+#numbers {
+  background-color: #1e1e1e;
+  color: #fff;
+  padding: 25px 40px;
+  margin: 40px 0;
+  border-left: 10px solid #454545;
+  border-right: 10px solid #454545;
+  box-sizing: border-box;
+}
+#numbers .numbers-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+#numbers .number-card {
+  flex: 1 1 150px;
+  text-align: center;
+  padding: 10px;
+  box-sizing: border-box;
+}
+#numbers .number-card:not(:last-child) {
+  border-right: 1px solid #FF3A3A;
+}
+
+#news .news-container {
+  background-color: #1e1e1e;
+  color: #fff;
+  padding: 25px 40px;
+  margin: 40px 0;
+  border-left: 10px solid #454545;
+  border-right: 10px solid #454545;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 20px;
+}
+#news .news-card {
+  flex: 1 1 150px;
+  text-align: center;
+  padding: 10px;
+  box-sizing: border-box;
+}
+#news .news-card:not(:last-child) {
+  border-right: 1px solid #FF3A3A;
+}
+
+#specialties .specialty-card {
+  padding: 20px;
+  border-radius: 20px;
+  border: 1px solid #8e8e8e;
+  box-sizing: border-box;
+}
+#specialties table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+#specialties table th,
+#specialties table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+#specialties table th {
+  background: rgba(0, 0, 0, 0.35);
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+#specialties table tr:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+/*# sourceMappingURL=main.css.map */

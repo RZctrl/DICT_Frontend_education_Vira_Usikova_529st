@@ -1,0 +1,22 @@
+//тут також використана інша структура при створенні основного файлу під час минулих практичних робі, тому цей файл змінено
+
+.all-reviews {
+  .reviews {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin: 20px 0;
+  }
+
+  .review-card {
+    @include card;
+    flex: 1 1 200px;
+  }
+
+  .review-author {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+}
