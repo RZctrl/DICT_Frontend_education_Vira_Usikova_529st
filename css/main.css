@@ -1,11 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Geologica:wght,CRSV@100..900,0&display=swap");
+:root {
+  --primary-color: #1d1d1d;
+  --primary-text-color: #f8f8f8;
+  --red-color: #ff3b39;
+  --red-hover-color: #ff1a18;
+  --grey-color: #7c7c7c;
+  --silver-color: #bfbfbf;
+}
+
+[data-theme=light] {
+  --primary-color: #f8f8f8;
+  --primary-text-color: #1d1d1d;
+  --red-color: #ff3b39;
+  --red-hover-color: #ff1a18;
+  --grey-color: #7c7c7c;
+  --silver-color: #bfbfbf;
+}
+
+body {
+  font-size: 14px;
+  font-family: "Comfortaa", sans-serif;
+  color: var(--primary-text-color);
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  line-height: 1.4;
+  font-weight: 700;
+  font-family: "Geologica", sans-serif;
+}
+
+h1, .h1 {
+  font-size: 38px;
+}
+
+h2, .h2 {
+  font-size: 32px;
+}
+
+h3, .h3 {
+  font-size: 28px;
+}
+
+h4, .h4 {
+  font-size: 24px;
+}
+
+h5, .h5 {
+  font-size: 18px;
+}
+
+h6, .h6 {
+  font-size: 16px;
+}
+
+.p, p {
+  font-size: 14px;
+  line-height: 1.2;
+  margin: 12px 0;
+}
+
+.small, small {
+  font-size: 12px;
+  line-height: 1.2;
+}
+
+.scc_large-text, .large {
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+a {
+  color: var(--red-color);
+  font-weight: 400;
+  text-decoration: underline;
+}
+a:active, a:hover, a:focus {
+  text-decoration: none;
+}
+
+strong {
+  font-weight: 700;
+}
+
+em {
+  font-style: italic;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
-  background: linear-gradient(#1d1d1d, #0e0e0f);
-  color: #2c3e50;
+  background: var(--primary-color);
+  color: var(--primary-text-color);
   max-width: 80em;
   margin: 0 auto;
   padding: 0 20px;
   text-align: center;
+}
+
+a {
+  color: var(--red-color);
 }
 
 section {
@@ -89,13 +181,13 @@ input[type=number]:focus,
 select:focus,
 textarea:focus {
   outline: none;
-  border-color: #8e8e8e;
+  border-color: #7c7c7c;
   background: rgba(0, 0, 0, 0.4);
 }
 
 select option {
-  background: #575151;
-  color: #fff;
+  background: var(--red-color);
+  color: var(--primary-text-color);
 }
 
 textarea {
@@ -105,16 +197,24 @@ textarea {
 
 button[type=submit] {
   display: block;
-  margin: 20px auto 0;
-  padding: 12px 32px;
-  background: #575151;
-  color: #fff;
-  border: none;
-  border-radius: 6px;
+  margin: 40px auto 0;
+  padding: 7px 14px;
+  background: var(--red-color);
+  color: var(--primary-text-color);
+  width: fit-content;
+  border: 1px solid var(--red-color);
+  border-radius: 5px;
   cursor: pointer;
 }
+button[type=submit] p {
+  margin: 0;
+}
 button[type=submit]:hover {
-  background: #8e8e8e;
+  background: var(--red-hover-color);
+  border-color: var(--red-hover-color);
+}
+button[type=submit]:focus {
+  background: var(--primary-color);
 }
 
 header {
@@ -154,7 +254,7 @@ nav a {
 nav a:hover {
   background: #575151;
   color: #fff;
-  border-color: #8e8e8e;
+  border-color: #7c7c7c;
 }
 
 footer {
@@ -178,7 +278,7 @@ footer img {
 .all-reviews .review-card {
   padding: 20px;
   border-radius: 20px;
-  border: 1px solid #8e8e8e;
+  border: 1px solid #7c7c7c;
   flex: 1 1 200px;
 }
 .all-reviews .review-author {
@@ -207,7 +307,7 @@ footer img {
   box-sizing: border-box;
 }
 #numbers .number-card:not(:last-child) {
-  border-right: 1px solid #FF3A3A;
+  border-right: 1px solid #ff3b39;
 }
 
 #news .news-container {
@@ -229,13 +329,13 @@ footer img {
   box-sizing: border-box;
 }
 #news .news-card:not(:last-child) {
-  border-right: 1px solid #FF3A3A;
+  border-right: 1px solid #ff3b39;
 }
 
 #specialties .specialty-card {
   padding: 20px;
   border-radius: 20px;
-  border: 1px solid #8e8e8e;
+  border: 1px solid #7c7c7c;
   box-sizing: border-box;
 }
 #specialties table {
