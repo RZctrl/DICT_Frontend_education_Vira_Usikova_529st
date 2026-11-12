@@ -1,12 +1,17 @@
 body {
   font-family: $font-stack;
-  background: linear-gradient($dark-bg, $darker-bg);
-  color: $main-color;
-  max-width: 80em;
+  background: var(--primary-color);
+  color: var(--primary-text-color);
+  max-width: $widedesk;
   margin: 0 auto;
   padding: 0 $base-padding;
   text-align: center;
 }
+
+a {
+  color: var(--red-color);
+}
+
 
 section {
   margin: 40px 0;
@@ -93,8 +98,8 @@ textarea {
 }
 
 select option {
-  background: $button-bg;
-  color: $white;
+  background: var(--red-color);
+  color: var(--primary-text-color);
 }
 
 textarea {
@@ -104,15 +109,25 @@ textarea {
 
 button[type="submit"] {
   display: block;
-  margin: 20px auto 0;
-  padding: 12px 32px;
-  background: $button-bg;
-  color: $white;
-  border: none;
-  border-radius: 6px;
+  margin: 40px auto 0;
+  padding: 7px 14px;
+  background: var(--red-color);
+  color: var(--primary-text-color);
+  width: fit-content;
+  border: 1px solid var(--red-color);
+  border-radius: 5px;
   cursor: pointer;
 
+  p {
+    margin: 0;
+  }
+
   &:hover {
-    background: $grey;
+    background: var(--red-hover-color);
+    border-color: var(--red-hover-color);
+  }
+
+  &:focus {
+    background: var(--primary-color);
   }
 }
