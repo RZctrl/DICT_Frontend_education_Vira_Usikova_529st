@@ -1,8 +1,11 @@
-//в минулих практичних роботах використовувалась інша структура використання карт, тому приклад з методичних матеріалів не використовується
 #specialties {
   .specialty-card {
     @include card;
+
     box-sizing: border-box;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
   }
 
   table {
