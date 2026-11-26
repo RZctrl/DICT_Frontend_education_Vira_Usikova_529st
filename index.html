@@ -12,10 +12,21 @@
 
 <body>
 <header>
-    <img class="logo" src="images/logo.svg" alt="Логотип кафедри">
+    <a class="logo" href="index.html">
+        <img src="images/logo.svg" alt="Логотип кафедри">
+    </a>
 
     <nav>
-        <ul class="main-menu">
+        <div class="burger-menu">
+            <button class="menu-toggle"
+                    type="button"
+                    aria-expanded="false"
+                    aria-controls="main-menu">
+                Меню
+            </button>
+        </div>
+
+        <ul class="main-menu" id="main-menu">
             <li><a class="menu-link" href="index.html">Головна</a></li>
             <li><a class="menu-link" href="index.html#specialties">Спеціальності</a></li>
             <li><a class="menu-link" href="index.html#science">Наука</a></li>

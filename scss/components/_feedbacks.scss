@@ -5,18 +5,31 @@
     display: flex;
     gap: 12px;
     flex-wrap: wrap;
-    align-items: flex-start;
+    align-items: stretch;
+    justify-content: center;
     margin: 20px 0;
   }
 
   .review-card {
     @include card;
-    flex: 1 1 200px;
+    flex: 1 1 100%;
   }
 
   .review-author {
     display: flex;
     flex-direction: column;
     gap: 4px;
+  }
+}
+
+@media (min-width: $tablet) {
+  .review-card {
+    flex: 1 1 calc(50% - 12px);
+  }
+}
+
+@media (min-width: $desktop) {
+  .review-card {
+    flex: 1 1 calc(25% - 12px);
   }
 }

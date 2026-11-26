@@ -1,7 +1,7 @@
 #numbers {
   background-color: $section-bg;
   color: $white;
-  padding: 25px 40px;
+  padding: 25px 20px;
   margin: 40px 0;
   border-left: 10px solid $border-grey;
   border-right: 10px solid $border-grey;
@@ -10,16 +10,42 @@
   .numbers-container {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
   }
 
   .number-card {
-    flex: 1 1 150px;
+    flex: 1 1 100%;
     text-align: center;
     padding: 10px;
     box-sizing: border-box;
+    border-bottom: 1px solid $red;
 
-    &:not(:last-child) {
-      border-right: 1px solid $red;
+    &:last-child {
+      border-bottom: 0;
+    }
+  }
+
+  @media (min-width: $tablet) {
+    padding: 25px 40px;
+
+    .number-card {
+      flex: 1 1 calc(50% - 20px);
+      border-bottom: 0;
+
+      &:nth-child(odd) {
+        border-right: 1px solid $red;
+      }
+    }
+  }
+
+  @media (min-width: $desktop) {
+    .number-card {
+      flex: 1 1 calc(25% - 20px);
+
+      &:not(:last-child) {
+        border-right: 1px solid $red;
+      }
     }
   }
 }

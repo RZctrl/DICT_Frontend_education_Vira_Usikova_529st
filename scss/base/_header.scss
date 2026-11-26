@@ -1,34 +1,69 @@
 header {
   padding: $base-padding 0;
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
-  gap: 20px;
   align-items: center;
+  gap: 10px;
+  position: relative;
 
   .logo {
-    width: 104px;
+    width: auto;
+
+    img {
+      max-height: 40px;
+      width: auto;
+      display: block;
+    }
   }
 
   nav {
-    width: calc(100% - 292px);
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    background: none;
-    border-radius: 0;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    position: static;
+
+    .burger-menu {
+      display: block;
+
+      .menu-toggle {
+        margin: 0;
+        padding: 7px 14px;
+        background: var(--red-color);
+        color: var(--primary-text-color);
+        border: 1px solid var(--red-color);
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: bold;
+
+        &:hover {
+          background: var(--red-hover-color);
+          border-color: var(--red-hover-color);
+        }
+      }
+    }
 
 
     .main-menu {
+      display: none;
+      position: absolute;
+      top: calc(100% + 10px);
+      left: 0;
+      width: 100%;
       margin: 0;
-      padding: 0;
+      padding: 20px;
       list-style: none;
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      gap: 20px;
-      justify-content: center;
-      font-weight: bold;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 12px;
+      background: $primary;
+      border: 1px solid $border-grey;
+      border-radius: 12px;
+      z-index: 100;
+
+      &.show {
+        display: flex;
+      }
+
       .menu-link {
         text-decoration: none;
         color: $white;
@@ -39,7 +74,7 @@ header {
   }
   .search {
     width: 24px;
-    margin-left: auto;
+    margin-left: 0;
   }
   .lang {
     width: 104px;
@@ -164,6 +199,58 @@ nav {
       background: $button-bg;
       color: $white;
       border-color: $grey;
+    }
+  }
+}
+
+//Планшет
+@media (min-width: $tablet) {
+  header {
+    gap: 20px;
+
+    .logo {
+      width: 104px;
+    }
+  }
+}
+
+//десктоп
+@media (min-width: $desktop) {
+  header {
+    flex-wrap: nowrap;
+    gap: 20px;
+
+    .logo {
+      width: 104px;
+    }
+
+    nav {
+      width: calc(100% - 292px);
+      margin-left: 0;
+      justify-content: center;
+
+      .burger-menu {
+        display: none;
+      }
+
+      .main-menu,
+      .main-menu.show {
+        display: flex;
+        position: static;
+        width: auto;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        padding: 0;
+        background: transparent;
+        border: 0;
+      }
+    }
+
+    .search {
+      margin-left: auto;
     }
   }
 }
