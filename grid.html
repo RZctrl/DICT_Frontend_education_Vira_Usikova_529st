@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Grid Layout | Department of Information and Communication Technologies</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+
+<body>
+<header>
+    <img class="logo" src="images/logo.svg" alt="Логотип кафедри">
+
+    <nav>
+        <ul class="main-menu">
+            <li><a class="menu-link" href="index.html">Головна</a></li>
+            <li><a class="menu-link" href="index.html#specialties">Спеціальності</a></li>
+            <li><a class="menu-link" href="index.html#science">Наука</a></li>
+            <li><a class="menu-link" href="index.html#news">Новини</a></li>
+            <li><a class="menu-link" href="#contact">Контакти</a></li>
+            <li><a class="menu-link" href="grid.html">Grid Layout</a></li>
+        </ul>
+    </nav>
+
+
+    <div class="search">
+        <a href="#" aria-label="Пошук">
+            <img src="images/Search_icon.svg" alt="Пошук">
+        </a>
+    </div>
+
+    <div class="lang">
+        <ul class="lang-wrapper">
+            <li class="ua"><a href="#" class="is-active">UA</a></li>
+            <li class="en"><a href="#">EN</a></li>
+        </ul>
+    </div>
+</header>
+
+
+<div class="grid-page">
+    <nav class="grid-nav">
+        <a href="index.html" class="grid-nav-link">← На головну</a>
+        <h2>Navigation</h2>
+    </nav>
+
+    <div class="grid-layout">
+        <main class="grid-main">
+            <h2>Основна частина сторінки</h2>
+            <p>Це приклад контенту, розміщеного за допомогою CSS Grid.</p>
+
+            <article class="content-card">
+                <h3>Основна частина сторінки</h3>
+                <p>Це приклад контенту, розміщеного за допомогою CSS Grid.</p>
+                <h4 class="gallery-title">Галерея зображень</h4>
+
+                <div class="image-gallery">
+                    <figure><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqlKfFTSZ-G2A14gCtbaRckyVj_ajhAtc50YvIMYwNn0kQWHVEQ7PktsQ&s=10" alt="Фото 1"></figure>
+                    <figure><img src="https://analyzing-testing.netzsch.com/_Resources/Persistent/3/4/7/4/347433c7a2e979ff1f00b3b1a241fc418e581471/Webinar%20-%20Image-597x336-597x336.webp" alt="Фото 2"></figure>
+                    <figure><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSr3Fyxo0XK_7LY75H-uccAoEcK0SAJLdN-j77zvYrHF_3Q-gUIfZym9r8&s=10" alt="Фото 3"></figure>
+                    <figure><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEcQcNTLxm53RQ0GM6sJiX6MePxv-VYgJv9qjx2MD3zg&s=10" alt="Фото 4"></figure>
+                    <figure><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIfShIgqQvR0CQfnmd_tu42wbb_Kk2B39AtfOGvgUbrHBktHiVsR2sErI_&s=10" alt="Фото 5"></figure>
+                    <figure><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQQdUrJIZEwQbfzfAMraoujddvcl6kPbnHCKVEjxxVTKLXupkd6UZ1UULW&s=10" alt="Фото 6"></figure>
+                </div>
+            </article>
+        </main>
+
+        <aside class="grid-sidebar">
+            <h3>Sidebar</h3>
+        </aside>
+    </div>
+</div>
+
+<footer id="contact">
+    <img src="images/logo.svg" alt="Логотип кафедри">
+    <p>61070, Харківська область, Харків, вул. Вадима Манька, 17<br>НАУ "ХАІ"<br>
+        Кафедра інформаційно-комунікаційних технологій №504</p>
+    <h2>Контакти</h2>
+    <p>
+        <a href="mailto:dict@khai.edu">dict@khai.edu</a><br>
+        <a href="tel:+380995025775">+38 (099) 502-57-75</a>  Понеділок - Пʼятниця, 9:00 - 17:00
+    </p>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>
